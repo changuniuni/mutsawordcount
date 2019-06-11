@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style>
+  body{
+    background-color:beige;
+  }
+  h1{
+    font-family: 궁서;
+  }
+  a{
+    font-family: 궁서;
+  }
+  input{
+    font-family: 궁서;
+  }
+  </style>
 </head>
 <body>
   <h1>안녕하세요! 여기는 글자를 세는 페이지 입니다!!</h1>
 
-  <a href="{%url 'about'%}">ABOUT</a>
+  <a href="{%url 'about'%}">자세히 보기</a>
+  <br>
+  <br>
+
  
   <form action="{%url 'result' %}">
     <textarea cols="40" rows="20" name="fulltext"></textarea>
     <br>
-    <input type="submit" value="Count!">
+    <input type="submit" value="냉큼 제출하시오!">
 
   </form>
 </body>
